@@ -16,6 +16,7 @@
 void ModMatrixExpon(u32* res , const u32* base , const u32* expon);
 void MatrixMul(u32 *r , const u32 *a , const u32 *b);
 
+//The mersenne prime 2^31 - 1 , used to reduce all elements of the matrix
 const ull MODM31 = 0x7FFFFFFF;
 
 //Copy array "in" to array "out"
@@ -99,8 +100,8 @@ inline void MatrixMul(u32 *r , const u32 *a , const u32 *b)
 }
 
  /**
-  * @brief Modular Matrix exponentiation
-  * @param[out] Resulting matrix res = base * base * ....... * base ( "expon" times ie. "base" to the power of "expon" )
+  * @brief Multiply a matrix with itself "expon" times, with all elements reduced modulo 0x7FFFFFFF
+  * @param[out] Resulting matrix res = base * base * ....... * base (Multiply a matrix with itself "expon" times) , with all elements reduced modulo 0x7FFFFFFF
   * @param[in] 3x3 matrix "base" , with all elements reduced modulo 0x7FFFFFFF
   * @param[in] Array "expon" , containing the exponent ( a positive integer with array[0] = Least Significant 32 bits ) to which "base" must be exponentiated .
   **/
