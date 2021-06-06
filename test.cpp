@@ -5,7 +5,7 @@
  * 
  * This software is released under the GNU LESSER GENERAL PUBLIC LICENSE Version 2.1 (LGPL 2.1) .
  * A copy of it can be found at the URL https://www.gnu.org/licenses/old-licenses/lgpl-2.1.en.html
- * Another copy of it is contained in the file "LICENSES" in the same directory as this file.
+ * Another copy of it is contained in the file "LICENSE" in the same directory as this file.
  * 
  */
 
