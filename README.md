@@ -21,3 +21,10 @@ The EJ (Efraem Joji’s) cryptosystem is a public-key cryptosystem with key exch
 	
 	100368 operations per second.
   
+Files:
+1. ejcryp.h - The core libraries implementing the EJ cryptosystem
+2. test.cpp - Program to test the working of the EJ cryptosystem and its speed
+3. README.md - This file
+4. Makefile - Makefile to test the EJ cryptosystem
+5. LICENSE - The license for this software - This software is released under the GNU LESSER GENERAL PUBLIC LICENSE Version 2.1 (LGPL 2.1) .
+6. Description-of-the-EJ-cryptosystem.pdf - A description of the EJ cryptosystem.
