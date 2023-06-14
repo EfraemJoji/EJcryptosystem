@@ -1,6 +1,6 @@
 # EJcryptosystem
 
-The EJ (Efraem Joji’s) cryptosystem is a public-key cryptosystem with key exchange, asymmetric encryption and digital signature. It is based on the associative binary relation of square matrix multiplication, with all matrix elements reduced modulo a prime number (here, chosen to be the mersenne prime 2^31 - 1 ).
+The EJ cryptosystem is a public-key cryptosystem with key exchange, asymmetric encryption and digital signature. It is based on the associative binary relation of square matrix multiplication, with all matrix elements reduced modulo a prime number (here, chosen to be the mersenne prime 2^31 - 1 ).
 	It currently gives about 256 bits security for a 288 bit key , that is, double the bits of security of Elliptic Curve Cryptography and about 14 times that of RSA(Rivest-Shamir-Adleman) . It is about 24 times faster than the RSA and about 9 times faster than ECDH (Elliptic Curve Diffie Hellman)  .
 
 ###  → RSA 4096 bits is almost comparable in bits of security to EJ cryptosystem 288 bits
@@ -39,5 +39,8 @@ Model: Acer Aspire ES1-533
 ## TODO:
 1. Optimize the code (especially assembly optimization and other C/C++ optimizations)
 2. Increase security (side channel resistance, guard against memory leaks)
-3. Port this cryptosystem to other programming languages
-4. Implementation in other libraries (SSL/TLS, Crypto++ etc.,)
+3. Port to other programming languages
+4. Hardware implementation
+
+## WARNING
+The entire cryptosystem was built only on an experimental basis, and should NEVER be used in any system that impacts real-world applications.
